@@ -18,7 +18,7 @@ const stripArticles = (name) => name.replace(/^(a |an |the )/i, '').trim();
 
 const sortedBands = bands.sort((a, b) => stripArticles(a).localeCompare(stripArticles(b)));
 
-const ul = document.getElementById('band');
+const ul = document.getElementById('bands');
 sortedBands.forEach(band => {
   const li = document.createElement('li');
   li.textContent = band;
